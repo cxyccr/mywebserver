@@ -1,5 +1,5 @@
 # mywebserver
-本项目非原创借鉴陈硕大佬muduo库和  大佬感谢大佬对项目中每一个细节都有详细的解释
+本项目非原创借鉴陈硕大佬muduo库和https://github.com/qinguoyi 大佬感谢大佬对项目中每一个细节都有详细的解释
 
 运行环境 Ubuntu
 
