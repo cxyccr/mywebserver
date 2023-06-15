@@ -37,50 +37,47 @@ void Config::parse_arg(int argc, char*argv[]){
     const char *str = "p:l:m:o:s:t:c:a:";
     while ((opt = getopt(argc, argv, str)) != -1)
     {
-        switch (opt)
-        {
-        case 'p':
+        
+        if(opt=='p)
         {
             PORT = atoi(optarg);
             break;
         }
-        case 'l':
+        if(opt=='m')
         {
             LOGWrite = atoi(optarg);
             break;
         }
-        case 'm':
+        if(opt=='o')
         {
             TRIGMode = atoi(optarg);
             break;
         }
-        case 'o':
+        if(opt=='s')
         {
             OPT_LINGER = atoi(optarg);
             break;
         }
-        case 's':
+        if(opt=='s')
         {
             sql_num = atoi(optarg);
             break;
         }
-        case 't':
+        if(opt=='t')
         {
             thread_num = atoi(optarg);
             break;
         }
-        case 'c':
+        if(opt=='c')
         {
             close_log = atoi(optarg);
             break;
         }
-        case 'a':
+        if(opt=='a')
         {
             actor_model = atoi(optarg);
             break;
         }
-        default:
-            break;
-        }
+        break;  
     }
 }
